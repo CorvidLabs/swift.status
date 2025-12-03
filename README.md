@@ -1,6 +1,6 @@
-# CorvidLabs Status
+# CorvidLabs Swift Status
 
-CI status for all public repositories.
+CI status for all Swift repositories.
 
 ## Swift Packages
 
