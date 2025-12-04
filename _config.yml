@@ -1,0 +1,8 @@
+title: CorvidLabs Swift Status
+description: CI status for all Swift repositories
+url: "https://corvidlabs.github.io"
+baseurl: "/swift.status"
+theme: jekyll-theme-cayman
+markdown: kramdown
+kramdown:
+  input: GFM
