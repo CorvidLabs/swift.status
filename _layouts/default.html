@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- NES.css -->
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <!-- Press Start 2P font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --theme-primary-bg: #111827;
+      --theme-secondary-bg: #253142;
+      --theme-section-bg: #1f2937;
+      --theme-primary-text: #f9fafb;
+      --theme-secondary-text: #d1d5db;
+      --theme-primary-accent: #8b5cf6;
+      --theme-secondary-accent: #14b8a6;
+      --theme-border-color: #374151;
+      --theme-success: #22c55e;
+      --theme-warning: #f59e0b;
+      --theme-error: #ef4444;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 12px;
+      line-height: 1.8;
+      background: linear-gradient(180deg, var(--theme-primary-accent) 0%, var(--theme-secondary-bg) 100%);
+      background-attachment: fixed;
+      color: var(--theme-primary-text);
+      scrollbar-width: thin;
+      scrollbar-color: var(--theme-primary-accent) var(--theme-primary-bg);
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .nes-container {
+      background-color: var(--theme-section-bg) !important;
+      border-color: var(--theme-border-color) !important;
+      color: var(--theme-primary-text) !important;
+      margin-bottom: 2rem;
+    }
+
+    .nes-container.is-dark {
+      background-color: var(--theme-section-bg) !important;
+    }
+
+    .nes-container.with-title > .title {
+      background-color: var(--theme-primary-bg) !important;
+      color: var(--theme-primary-accent) !important;
+    }
+
+    h1 {
+      color: var(--theme-primary-text);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: var(--theme-primary-accent);
+      font-size: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--theme-secondary-text);
+      font-size: 0.7rem;
+    }
+
+    a {
+      color: var(--theme-secondary-accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--theme-primary-accent);
+      text-decoration: underline;
+    }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 0.6rem;
+    }
+
+    th {
+      background-color: var(--theme-primary-bg) !important;
+      color: var(--theme-primary-accent) !important;
+      font-weight: normal;
+      text-align: left;
+      padding: 12px 8px;
+      border: 4px solid var(--theme-border-color);
+      white-space: nowrap;
+    }
+
+    td {
+      background-color: var(--theme-section-bg);
+      padding: 10px 8px;
+      border: 2px solid var(--theme-border-color);
+      vertical-align: middle;
+    }
+
+    tr:nth-child(even) td {
+      background-color: var(--theme-secondary-bg);
+    }
+
+    tr:hover td {
+      background-color: var(--theme-primary-bg);
+    }
+
+    table img {
+      vertical-align: middle;
+      max-height: 20px;
+      image-rendering: pixelated;
+    }
+
+    td:first-child {
+      font-weight: normal;
+    }
+
+    td:first-child a {
+      color: var(--theme-primary-text);
+    }
+
+    td:first-child a:hover {
+      color: var(--theme-primary-accent);
+    }
+
+    /* Responsive table */
+    .table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 1rem 0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--theme-secondary-text);
+      font-size: 0.5rem;
+    }
+
+    .footer a {
+      color: var(--theme-primary-accent);
+    }
+
+    /* NES.css overrides */
+    .nes-table {
+      border-color: var(--theme-border-color) !important;
+    }
+
+    .nes-table.is-dark {
+      color: var(--theme-primary-text) !important;
+    }
+
+    .nes-table.is-dark::before {
+      pointer-events: none;
+    }
+
+    /* Pixel corners effect */
+    .pixel-box {
+      background-color: var(--theme-section-bg);
+      border: 4px solid var(--theme-border-color);
+      box-shadow:
+        4px 0 0 var(--theme-border-color),
+        -4px 0 0 var(--theme-border-color),
+        0 4px 0 var(--theme-border-color),
+        0 -4px 0 var(--theme-border-color);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Header styling */
+    .header {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .header h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      margin: 0;
+    }
+
+    /* Status indicator colors */
+    .status-passing { color: var(--theme-success); }
+    .status-failing { color: var(--theme-error); }
+    .status-pending { color: var(--theme-warning); }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      table {
+        font-size: 0.5rem;
+      }
+
+      th, td {
+        padding: 6px 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pixel-box header">
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+    </div>
+
+    <div class="pixel-box">
+      <div class="table-wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Built with <a href="https://nostalgic-css.github.io/NES.css/">NES.css</a> · <a href="https://github.com/CorvidLabs">CorvidLabs</a></p>
+    </div>
+  </div>
+</body>
+</html>

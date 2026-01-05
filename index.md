@@ -2,10 +2,6 @@
 layout: default
 ---
 
-# CorvidLabs Swift Status
-
-CI status for all Swift repositories.
-
 ## Swift Packages
 
 | Package | Version | macOS | Ubuntu | Docs | Issues | PRs |
