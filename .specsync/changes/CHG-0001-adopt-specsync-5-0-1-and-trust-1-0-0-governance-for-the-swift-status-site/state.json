@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-swift-status-site",
+  "slug": "adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-swift-status-site",
+  "title": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the Swift status site",
+  "description": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the Swift status site",
+  "kind": "migration",
+  "state": "draft",
+  "base_commit": "f66cf5314214a2dfcc5f7a4416530d02542573eb",
+  "created_at": 1783891977,
+  "updated_at": 1783892014,
+  "affected_specs": [],
+  "affected_paths": [
+    "."
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "This documentation-only migration adds governance without inventing canonical product specifications or changing content semantics.",
+  "acceptance_criteria": [
+    "All four agents and Trust doctor pass; deterministic committed-content validation passes; no canonical product specification or content semantics are invented"
+  ],
+  "selected_artifacts": [
+    "context",
+    "research",
+    "design",
+    "plan",
+    "tasks",
+    "testing",
+    "docs"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}

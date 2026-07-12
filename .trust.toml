@@ -1,0 +1,17 @@
+schema_version = 1
+profile = "standard"
+[lifecycle]
+command = ["fledge", "lanes", "run", "verify"]
+[contract]
+enabled = true
+require_coverage = 0
+skip_reason = "No canonical source modules or prior SpecSync threshold exist; deterministic content validation remains blocking"
+[risk]
+threshold = "block"
+[provenance]
+mode = "soft"
+policy = ".attest.json"
+skip_reason = ""
+[atlas]
+enabled = false
+skip_reason = "No Trust-managed Atlas publication is configured"

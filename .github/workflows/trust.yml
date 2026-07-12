@@ -1,0 +1,16 @@
+name: Trust
+on:
+  pull_request:
+jobs:
+  trust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Fetch base branch
+        run: git fetch origin "${{ github.event.pull_request.base.ref }}:refs/remotes/origin/${{ github.event.pull_request.base.ref }}"
+      - name: CorvidLabs Trust gate
+        uses: CorvidLabs/trust@9d32b5786d2e9e4d39fc581c0091c721ee3d4226
+        with:
+          range: "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
