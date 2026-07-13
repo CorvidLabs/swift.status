@@ -5,4 +5,4 @@ artifact: context
 
 # Context
 
-This documentation-only migration enables the verified SpecSync 5.0.1 lifecycle and immutable Trust 1.0.0 without inventing canonical product specifications or changing content semantics. Deterministic checks validate the committed documentation or static-site inputs. The SDD remains draft pending independent approval and signing.
+The repository publishes a Jekyll status page from `index.md`, `_config.yml`, and `_layouts/default.html`, with the same package-status table maintained in `README.md`. It has no application or library source modules and no prior canonical requirement companions. The migration therefore adopts the verified change lifecycle with an explicit no-spec-change rationale instead of inventing product requirements.

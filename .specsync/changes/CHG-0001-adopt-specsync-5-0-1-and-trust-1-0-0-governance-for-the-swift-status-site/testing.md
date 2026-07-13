@@ -5,4 +5,4 @@ artifact: testing
 
 # Testing
 
-This documentation-only migration enables the verified SpecSync 5.0.1 lifecycle and immutable Trust 1.0.0 without inventing canonical product specifications or changing content semantics. Deterministic checks validate the committed documentation or static-site inputs. The SDD remains draft pending independent approval and signing.
+Run `fledge lanes run verify` to require all four committed Jekyll inputs to exist and be non-empty. Confirm all four agent integrations with `specsync agents status`, run `specsync check --strict --force`, then run `fledge trust doctor` and `fledge trust verify`. Hosted pull-request validation must independently complete the same immutable Trust gate before merge.

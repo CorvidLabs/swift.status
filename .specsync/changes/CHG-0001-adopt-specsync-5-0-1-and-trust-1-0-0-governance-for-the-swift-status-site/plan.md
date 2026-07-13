@@ -5,4 +5,4 @@ artifact: plan
 
 # Plan
 
-This documentation-only migration enables the verified SpecSync 5.0.1 lifecycle and immutable Trust 1.0.0 without inventing canonical product specifications or changing content semantics. Deterministic checks validate the committed documentation or static-site inputs. The SDD remains draft pending independent approval and signing.
+Install the four agent integrations, configure the verified no-spec-change lifecycle, add a deterministic Fledge lane for the committed Jekyll inputs, and add the unified Trust pull-request gate pinned to Trust 1.0.0's immutable commit. Validate the lane, agent status, strict SpecSync check, Trust doctor, and full Trust verification before recording closing approval.

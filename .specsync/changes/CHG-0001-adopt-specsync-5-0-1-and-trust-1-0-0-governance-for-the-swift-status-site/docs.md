@@ -5,4 +5,4 @@ artifact: docs
 
 # Docs
 
-This documentation-only migration enables the verified SpecSync 5.0.1 lifecycle and immutable Trust 1.0.0 without inventing canonical product specifications or changing content semantics. Deterministic checks validate the committed documentation or static-site inputs. The SDD remains draft pending independent approval and signing.
+No authored status-page content or public usage documentation changes in this migration. The added `AGENTS.md` section documents the local SpecSync lifecycle commands for contributors, while generated integration files expose the same workflow to Claude, Cursor, Codex, and Gemini.

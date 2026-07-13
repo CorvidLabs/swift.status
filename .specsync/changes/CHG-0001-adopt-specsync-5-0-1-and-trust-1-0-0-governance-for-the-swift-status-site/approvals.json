@@ -1,3 +1,18 @@
 {
-  "approvals": []
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783982609,
+      "digest": "74a4c6f9534e7fe0262b3fca5e5ea9fba4656b9918b25d227b5063ec787b4c83",
+      "note": "Definition approved after repository-specific Jekyll scope, meaningful paths, no-spec rationale, and verification plan were reviewed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783982609,
+      "digest": "aa06fb0f116263ddd947361aed8478360b24b013aef4cb721eac34a956c9f22f",
+      "note": "Closing approval recorded after the native Jekyll input lane and all four agent integrations passed; hosted CI remains an independent merge prerequisite."
+    }
+  ]
 }

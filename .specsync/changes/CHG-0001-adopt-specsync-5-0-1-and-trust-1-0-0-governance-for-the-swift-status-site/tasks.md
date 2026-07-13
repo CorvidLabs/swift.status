@@ -5,4 +5,8 @@ artifact: tasks
 
 # Tasks
 
-This documentation-only migration enables the verified SpecSync 5.0.1 lifecycle and immutable Trust 1.0.0 without inventing canonical product specifications or changing content semantics. Deterministic checks validate the committed documentation or static-site inputs. The SDD remains draft pending independent approval and signing.
+- [x] Record the absence of canonical source modules and requirement companions.
+- [x] Install Claude, Cursor, Codex, and Gemini SpecSync integrations.
+- [x] Configure SpecSync 5.0.1 meaningful paths for every authored Jekyll input.
+- [x] Configure the deterministic Fledge content lane and standard Trust policy.
+- [x] Pin the pull-request gate to the immutable Trust 1.0.0 release commit.

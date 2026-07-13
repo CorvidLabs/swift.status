@@ -5,4 +5,4 @@ artifact: research
 
 # Research
 
-This documentation-only migration enables the verified SpecSync 5.0.1 lifecycle and immutable Trust 1.0.0 without inventing canonical product specifications or changing content semantics. Deterministic checks validate the committed documentation or static-site inputs. The SDD remains draft pending independent approval and signing.
+Repository inspection confirmed that the tracked authored surface is a static Jekyll status page: two Markdown documents, one Jekyll configuration file, and one HTML layout. No package manifest, executable source tree, test suite, or existing SpecSync requirement companion is present. A deterministic existence check is the available native verification boundary; SpecSync lifecycle validation and Trust policy checks provide the governance boundary.

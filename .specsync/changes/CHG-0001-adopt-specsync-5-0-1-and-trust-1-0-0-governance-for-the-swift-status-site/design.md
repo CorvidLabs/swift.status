@@ -5,4 +5,4 @@ artifact: design
 
 # Design
 
-This documentation-only migration enables the verified SpecSync 5.0.1 lifecycle and immutable Trust 1.0.0 without inventing canonical product specifications or changing content semantics. Deterministic checks validate the committed documentation or static-site inputs. The SDD remains draft pending independent approval and signing.
+SpecSync 5.0.1 records governance state in `.specsync/` and treats all four authored Jekyll inputs plus governance configuration as meaningful paths. Trust 1.0.0 invokes the repository's `verify` lane, enforces contract and risk policy, keeps provenance progressive, and leaves Atlas publication disabled. The pull-request job retains the required name `trust` and uses the immutable Trust release commit.

@@ -6,6 +6,10 @@
     "src/",
     "tests/",
     "site/",
+    "README.md",
+    "index.md",
+    "_config.yml",
+    "_layouts/",
     ".github/",
     "Cargo.toml",
     "Cargo.lock",
@@ -32,7 +36,7 @@
     "specs/"
   ],
   "verification_commands": [
-    "test -s README.md && test -s index.md && test -s _config.yml && test -s _layouts/default.html"
+    "fledge lanes run verify"
   ],
   "custom_artifacts": {},
   "principles_file": null
