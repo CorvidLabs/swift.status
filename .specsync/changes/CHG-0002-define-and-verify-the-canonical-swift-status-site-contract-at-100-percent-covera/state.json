@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0002-define-and-verify-the-canonical-swift-status-site-contract-at-100-percent-covera",
+  "slug": "define-and-verify-the-canonical-swift-status-site-contract-at-100-percent-covera",
+  "title": "Define and verify the canonical Swift status site contract at 100 percent coverage",
+  "description": "Define and verify the canonical Swift status site contract at 100 percent coverage",
+  "kind": "documentation",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "211e6efa976dc517ee2dad631591f7486460b32a",
+  "created_at": 1784016260,
+  "updated_at": 1784016634,
+  "affected_specs": [
+    "status-site"
+  ],
+  "affected_paths": [
+    "README.md",
+    "index.md",
+    "_config.yml",
+    "_layouts/default.html",
+    "scripts/verify-site.py",
+    "specs/status-site",
+    ".specsync/change-sequence.json"
+  ],
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
+  "acceptance_criteria": [
+    "SpecSync reports 100 percent coverage for all four authored Jekyll inputs; canonical specs and stable requirement IDs match committed behavior; deterministic verification rejects drift and placeholders; Trust runs on an eligible public runner"
+  ],
+  "selected_artifacts": [
+    "context",
+    "docs",
+    "design",
+    "tasks"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}

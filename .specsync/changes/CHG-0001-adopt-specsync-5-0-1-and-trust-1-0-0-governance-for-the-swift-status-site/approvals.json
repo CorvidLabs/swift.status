@@ -13,6 +13,104 @@
       "timestamp": 1783982609,
       "digest": "aa06fb0f116263ddd947361aed8478360b24b013aef4cb721eac34a956c9f22f",
       "note": "Closing approval recorded after the native Jekyll input lane and all four agent integrations passed; hosted CI remains an independent merge prerequisite."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784016493,
+      "digest": "375a120a1189e2eb87d751adc3d37f9fb577c2742f861eb7513eeddc73070795",
+      "note": "Re-approved after clarifying the truthful pre-migration no-spec state and its separation from CHG-0002."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784016627,
+      "digest": "74a4c6f9534e7fe0262b3fca5e5ea9fba4656b9918b25d227b5063ec787b4c83",
+      "note": "Restored and re-approved the original accepted migration definition before refreshed delivery verification."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784016628,
+      "digest": "857881f40871163127fec9ffdb65893189d1179b60e71f6ff3e79dbac46fc7a8",
+      "note": "Fresh native verification passes after the supported runner and coverage corrections."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784016648,
+      "digest": "60ff51bad303748fb24cc9daa9d7f71a9293492eb6ce0defbdea36fe8b09cc2e",
+      "note": "Refreshed against the final accepted status-site contract; native verification remains green."
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-swift-status-site",
+      "actor": "user:0xLeif",
+      "reason": "Replace the unavailable public self-hosted runner with ubuntu-latest and expand the migration to truthful 100% coverage of every authored Jekyll input.",
+      "timestamp": 1784016250,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783982609,
+        "digest": "aa06fb0f116263ddd947361aed8478360b24b013aef4cb721eac34a956c9f22f",
+        "note": "Closing approval recorded after the native Jekyll input lane and all four agent integrations passed; hosted CI remains an independent merge prerequisite."
+      },
+      "prior_verification": {
+        "timestamp": 1783982609,
+        "commit": "c5aa7d94a1fc46957c97a1ee59977df6c59808a1",
+        "contract_digest": "74a4c6f9534e7fe0262b3fca5e5ea9fba4656b9918b25d227b5063ec787b4c83",
+        "workspace_digest": "8499bfb4d9263d02ab33c2a053b3ea18a7fe84d0f30186f850f0a8cb3aa1c25c",
+        "acceptance_input_digest": "bf4a3809bc460a9eabbe675ccc00d09348b8052f217a5ffab7c6c294fcb60ac4",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "bf4a3809bc460a9eabbe675ccc00d09348b8052f217a5ffab7c6c294fcb60ac4",
+      "current_acceptance_input_digest": "f72d8c65278ae4dc2d7d38cb5801d1fcce2b83da702ce6f51f8cea704dcd3d12"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-swift-status-site",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0002 applied the approved status-site semantic delta after the migration was accepted, so the migration delivery evidence must be refreshed against the final canonical contract.",
+      "timestamp": 1784016648,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1784016628,
+        "digest": "857881f40871163127fec9ffdb65893189d1179b60e71f6ff3e79dbac46fc7a8",
+        "note": "Fresh native verification passes after the supported runner and coverage corrections."
+      },
+      "prior_verification": {
+        "timestamp": 1784016627,
+        "commit": "211e6efa976dc517ee2dad631591f7486460b32a",
+        "contract_digest": "74a4c6f9534e7fe0262b3fca5e5ea9fba4656b9918b25d227b5063ec787b4c83",
+        "workspace_digest": "843ed7bcd9d65175b028804ef35c06c1ec99974cce6663ef3e5599ab0932cc79",
+        "acceptance_input_digest": "8876143f6a386df1aa94f3da13a4f46a18f84e4ad5b55321ef0c3b3e93779c57",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "8876143f6a386df1aa94f3da13a4f46a18f84e4ad5b55321ef0c3b3e93779c57",
+      "current_acceptance_input_digest": "640527e15605fe44670594c01e061d1055fa2ded063526e36618f5cb303f0082"
     }
   ]
 }

@@ -3,7 +3,7 @@ on:
   pull_request:
 jobs:
   trust:
-    runs-on: [self-hosted, macOS]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
         with:

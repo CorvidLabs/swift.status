@@ -1,5 +1,5 @@
 [tasks]
-content = "test -s README.md && test -s index.md && test -s _config.yml && test -s _layouts/default.html"
+content = "python3 scripts/verify-site.py"
 
 [lanes.verify]
 description = "Validate committed Jekyll status-site inputs"
