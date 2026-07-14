@@ -1,0 +1,6 @@
+[tasks]
+content = "python3 scripts/verify-site.py"
+
+[lanes.verify]
+description = "Validate committed Jekyll status-site inputs"
+steps = ["content"]

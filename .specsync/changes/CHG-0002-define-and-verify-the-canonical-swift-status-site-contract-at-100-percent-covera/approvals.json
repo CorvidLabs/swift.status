@@ -1,0 +1,26 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784016435,
+      "digest": "b514c4f0fd2d4644669317d7b55b5f6892f7490f3703039e30aa3848843e0abc",
+      "note": "Definition reviewed against all four committed Jekyll inputs and deterministic verification."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784016460,
+      "digest": "42d31c669a0950f223ef9dfc45586b4bd326b63556a45239bb9cf0747366a040",
+      "note": "Re-approved after truthfully recording completed native verification and definition preparation tasks."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784016634,
+      "digest": "433f65634d18d96ec99957456f261a2c9bb678d27378c8f4da76614eed3bc165",
+      "note": "Four authored Jekyll inputs, six configuration exports, and nine stable requirements are verified at 100 percent coverage."
+    }
+  ],
+  "reopenings": []
+}

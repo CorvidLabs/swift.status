@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "enabled": true,
+  "require_change_for_meaningful_files": true,
+  "meaningful_paths": [
+    "README.md",
+    "index.md",
+    "_config.yml",
+    "_layouts/",
+    ".github/",
+    ".trust.toml",
+    "fledge.toml",
+    "scripts/",
+    "specs/",
+    ".specsync/sdd.json",
+    ".specsync/config.toml",
+    ".specsync/version"
+  ],
+  "ignored_paths": [
+    ".specsync/cache/",
+    ".specsync/archives/"
+  ],
+  "verification_commands": [
+    "fledge lanes run verify"
+  ],
+  "custom_artifacts": {},
+  "principles_file": null
+}
