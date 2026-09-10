@@ -11,6 +11,6 @@ jobs:
       - name: Fetch base branch
         run: git fetch origin "${{ github.event.pull_request.base.ref }}:refs/remotes/origin/${{ github.event.pull_request.base.ref }}"
       - name: CorvidLabs Trust gate
-        uses: CorvidLabs/trust@e0272543ad5c88ec75cea1e606cc2efa552af25b # v1.2.0-rc.4
+        uses: CorvidLabs/trust@fcc889f54d8b4892a81af463c5a0250e2be66fc5 # v1.2.0
         with:
           range: "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
